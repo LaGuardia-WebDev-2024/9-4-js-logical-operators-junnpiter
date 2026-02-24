@@ -13,8 +13,10 @@ draw = function() {
     textSize(30);
     text("Press me!", 145, 115);
 
-    if(mousePressed){
+    if(mousePressed && mouseY < 200){
         labelCanvas();
+        fill(255, 0, 0);
+        rect(0, 0, 400, 200);  
     }
 };
 
